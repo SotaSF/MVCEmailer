@@ -10,7 +10,7 @@ class EmailModel {
 
   async send() {
     try {
-      // Use the email service to send the email
+      
       await EmailService.sendEmail(this.to, this.subject, this.message);
       
       return {

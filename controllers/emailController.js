@@ -17,7 +17,7 @@ exports.sendEmail = async (req, res) => {
       });
     }
 
-    // Create and send email
+    
     const email = new EmailModel(to, subject, message);
     const result = await email.send();
 
